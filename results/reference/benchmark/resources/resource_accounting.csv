@@ -1,0 +1,17 @@
+phase,status,cpu_hours,gpu_hours,wall_seconds,peak_cpu_bytes,peak_gpu_bytes,statevector_evaluations,circuit_evaluations,kernel_entries,offline_shot_draws,real_qpu_shots,notes
+phase0,completed,,,,,,,,,,0,interactive audit commands were not globally time-wrapped; CPU and wall use are unknown rather than zero
+phase1_download_attempts,operational_failures,,,,,,,,,,0,two incomplete CIFAR transfers and two unavailable Fashion endpoints; resource use not globally instrumented
+phase1_failed_split_attempt,operational_failure,0.001814,0,0.49,35840000,0,,,,,0,corrupt CIFAR archive; no test member opened
+phase1_split_build,completed,0.003208,0,5.67,158932992,0,0,0,0,0,0,training labels only; test payloads remain unopened
+phase2_job_28875,operational_failure,<0.002222,<0.000278,<1,,,,,,,0,exit 127 before Python because /usr/bin/time absent; allocated use below scheduler one-second resolution
+phase2_resnet_job_28876,completed,0.146667,0.018333,66,,unknown,0,0,0,0,0,Slurm allocated accounting; four training/validation feature caches; test unopened
+phase2_scale_interfaces,completed,0.322911,0,26.70,826630144,0,0,0,0,0,0,15 independent train-only standardizer/PCA/angle fits
+phase3_smoke_aborted,recovered_operational_failure,,0,,,,,,,,0,CPU thread oversubscription made the initial bounded smoke run impractical; interrupted without scientific output; exact CPU use unknown
+phase3_smoke_final,completed,,0,24.251,,,,12800,,0,0,training/validation-only; 80 balanced MNIST samples per split; CPU use not globally instrumented
+phase4_job_28877,operational_failure,,,,,,,,,,0,"four array tasks failed before batch startup with exit 0:53; each elapsed <=1 second; exact allocation use unknown"
+phase4_job_28883,operational_failure,,,,,,,,,,0,"eleven array tasks failed before batch startup with exit 0:53 and zero elapsed time; exact allocation use unknown; further submissions paused"
+phase4_job_28896,operational_failure,,,,,,,,,,0,"single canonical-path pilot failed before batch startup with exit 0:53 and zero elapsed; exact allocation use unknown"
+phase4_full_pdr_pilot,recovered_estimation_error,,,,,,,,,,0,"three full-data searches interrupted on an overly conservative projection; stricter accounting remained below cap; identical configurations resumed from scratch; test unopened"
+phase9_statistics_accepted,completed,0.222528,0,810.24,2057830400,0,0,0,0,0,0,"/usr/bin/time: 758.40 user plus 42.70 system CPU seconds; 10000 bootstrap replicates and 10000 permutations"
+phase9_statistics_optimization,recovered_operational_failure,unknown,0,unknown,unknown,0,0,0,0,0,0,"output-free profiled attempts interrupted; aggregate CPU and wall use not instrumented and therefore not reported as zero"
+phase11_secondary_intervals,completed,0.623661,0,612.98,944340992,0,0,0,0,0,0,"/usr/bin/time: 2224.30 user plus 20.88 system CPU seconds across four bounded workers; exact ECE error-AUROC and AURC intervals"

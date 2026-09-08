@@ -1,0 +1,111 @@
+{
+  "MNIST_excluded": true,
+  "bootstrap_replicates": 10000,
+  "contrasts": [
+    {
+      "dataset": "fashion_mnist",
+      "id": "H1_fashion_mnist",
+      "method_A": "PdrQC-Matched",
+      "method_B": "C-RBF",
+      "metric": "accuracy",
+      "setting": "exact"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "id": "H2_fashion_mnist",
+      "method_A": "QF-Ring",
+      "method_B": "QF-Product",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_128"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "id": "H3_fashion_mnist",
+      "method_A": "Yomo-Matched",
+      "method_B": "VQC-DR",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_8"
+    },
+    {
+      "dataset": "fashion_mnist",
+      "id": "H4_fashion_mnist",
+      "method_A": "PdrQC-Matched",
+      "method_B": "QF-Ring",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_128"
+    },
+    {
+      "dataset": "cifar10",
+      "id": "H1_cifar10",
+      "method_A": "PdrQC-Matched",
+      "method_B": "C-RBF",
+      "metric": "accuracy",
+      "setting": "exact"
+    },
+    {
+      "dataset": "cifar10",
+      "id": "H2_cifar10",
+      "method_A": "QF-Ring",
+      "method_B": "QF-Product",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_128"
+    },
+    {
+      "dataset": "cifar10",
+      "id": "H3_cifar10",
+      "method_A": "Yomo-Matched",
+      "method_B": "VQC-DR",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_8"
+    },
+    {
+      "dataset": "cifar10",
+      "id": "H4_cifar10",
+      "method_A": "PdrQC-Matched",
+      "method_B": "QF-Ring",
+      "metric": "accuracy",
+      "setting": "finite_shot_total_128"
+    },
+    {
+      "dataset": "breastmnist",
+      "id": "H1_breastmnist",
+      "method_A": "PdrQC-Matched",
+      "method_B": "C-RBF",
+      "metric": "AUROC",
+      "setting": "exact"
+    },
+    {
+      "dataset": "breastmnist",
+      "id": "H2_breastmnist",
+      "method_A": "QF-Ring",
+      "method_B": "QF-Product",
+      "metric": "AUROC",
+      "setting": "finite_shot_total_128"
+    },
+    {
+      "dataset": "breastmnist",
+      "id": "H3_breastmnist",
+      "method_A": "Yomo-Matched",
+      "method_B": "VQC-DR",
+      "metric": "AUROC",
+      "setting": "finite_shot_total_8"
+    },
+    {
+      "dataset": "breastmnist",
+      "id": "H4_breastmnist",
+      "method_A": "PdrQC-Matched",
+      "method_B": "QF-Ring",
+      "metric": "AUROC",
+      "setting": "finite_shot_total_128"
+    }
+  ],
+  "datasets": [
+    "fashion_mnist",
+    "cifar10",
+    "breastmnist"
+  ],
+  "global_primary_Holm_family": 12,
+  "permutations": 10000,
+  "protocol_version": 1,
+  "uncertainty_Holm_family": 6
+}

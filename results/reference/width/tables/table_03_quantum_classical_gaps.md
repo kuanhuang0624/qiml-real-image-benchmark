@@ -1,0 +1,26 @@
+| dataset | width | quantum method | classical method | accuracy difference | 95% CI |
+| --- | --- | --- | --- | --- | --- |
+| mnist | 8 | PdrQC-Matched | C-RBF | -0.050900000000000056 | [-0.0572, -0.0447] |
+| mnist | 8 | PdrQC-Matched | C-RFF | -0.04349999999999998 | [-0.0496, -0.0375] |
+| mnist | 8 | PdrQC-Matched | C-Trig | -0.0363 | [-0.0423, -0.0305] |
+| mnist | 8 | PdrQC-Matched | C-ResNet | -0.1703 | [-0.1778, -0.1628] |
+| mnist | 12 | PdrQC-Matched | C-RBF | -0.07689999999999997 | [-0.0834, -0.0706] |
+| mnist | 12 | PdrQC-Matched | C-RFF | -0.052266666666666683 | [-0.0587, -0.0459] |
+| mnist | 12 | PdrQC-Matched | C-Trig | -0.06240000000000001 | [-0.0685, -0.0564] |
+| mnist | 12 | PdrQC-Matched | C-ResNet | -0.138 | [-0.1449, -0.1309] |
+| mnist | 16 | PdrQC-Matched | C-RBF | -0.11550000000000005 | [-0.1225, -0.1085] |
+| mnist | 16 | PdrQC-Matched | C-RFF | -0.03613333333333335 | [-0.0494, -0.0231] |
+| mnist | 16 | PdrQC-Matched | C-Trig | -0.09850000000000003 | [-0.1057, -0.0915] |
+| mnist | 16 | PdrQC-Matched | C-ResNet | -0.16190000000000004 | [-0.1693, -0.1546] |
+| fashion_mnist | 8 | PdrQC-Matched | C-RBF | -0.02189999999999992 | [-0.0277, -0.0161] |
+| fashion_mnist | 8 | PdrQC-Matched | C-RFF | -0.018433333333333413 | [-0.0242, -0.0125] |
+| fashion_mnist | 8 | PdrQC-Matched | C-Trig | -0.015199999999999991 | [-0.0205, -0.0099] |
+| fashion_mnist | 8 | PdrQC-Matched | C-ResNet | -0.09289999999999998 | [-0.1005, -0.0851] |
+| fashion_mnist | 12 | PdrQC-Matched | C-RBF | -0.052100000000000035 | [-0.0591, -0.0451] |
+| fashion_mnist | 12 | PdrQC-Matched | C-RFF | -0.035800000000000054 | [-0.0429, -0.0289] |
+| fashion_mnist | 12 | PdrQC-Matched | C-Trig | -0.03949999999999998 | [-0.0463, -0.0328] |
+| fashion_mnist | 12 | PdrQC-Matched | C-ResNet | -0.10140000000000005 | [-0.1092, -0.0937] |
+| fashion_mnist | 16 | PdrQC-Matched | C-RBF | -0.06240000000000001 | [-0.0699, -0.0550] |
+| fashion_mnist | 16 | PdrQC-Matched | C-RFF | -0.0048000000000000265 | [-0.0139, 0.0048] |
+| fashion_mnist | 16 | PdrQC-Matched | C-Trig | -0.046600000000000086 | [-0.0537, -0.0395] |
+| fashion_mnist | 16 | PdrQC-Matched | C-ResNet | -0.09930000000000005 | [-0.1071, -0.0916] |

@@ -1,0 +1,18 @@
+# Table 3: Method Registry
+
+| method | family | input | qubits | quantum_trainable_parameters | readout_or_head | matched_status |
+| --- | --- | --- | --- | --- | --- | --- |
+| QK-IQP | fixed quantum fidelity kernel | PCA8 angles | 8.0 | 0.0 | precomputed-kernel SVM | quantum |
+| QF-Product | fixed product quantum features | PCA8 angles | 8.0 | 0.0 | 48 Pauli features plus logistic regression | quantum |
+| QF-Ring | fixed entangled quantum features | PCA8 angles | 8.0 | 0.0 | 48 Pauli features plus logistic regression | quantum |
+| VQC-DR | data-reuploading variational classifier | PCA8 angles | 8.0 | 48.0 | eight Z expectations plus linear head | quantum |
+| Yomo-Matched | single-shot probability classifier | PCA8 angles | 8.0 | 48.0 | computational-basis probability aggregation | matched adaptation |
+| PdrQC-Matched | task-adaptive Pauli representation | PCA8 angles | 8.0 | 0.0 | selected weight-at-most-two Pauli features | matched adaptation |
+| C-LR | classical shared-interface baseline | PCA8 angles |  |  | logistic regression | matched classical |
+| C-MLP | classical parameter-matched baseline | PCA8 angles |  |  | one-hidden-layer MLP | matched classical |
+| C-Poly | classical kernel baseline | PCA8 angles |  |  | polynomial SVM | matched classical |
+| C-RBF | classical kernel baseline | PCA8 angles |  |  | RBF SVM | matched classical |
+| C-RFF | scalable classical kernel approximation | PCA8 angles |  |  | random Fourier features plus logistic regression | matched classical |
+| C-Trig | explicit angle-Fourier control | PCA8 angles |  |  | trigonometric monomials plus logistic regression | matched classical |
+| C-ResNet | frozen-backbone reference | ResNet18 512D |  |  | linear head | unmatched full-interface reference |
+| C-CNN | from-pixels reference | original image |  |  | compact CNN | unmatched full-image reference |

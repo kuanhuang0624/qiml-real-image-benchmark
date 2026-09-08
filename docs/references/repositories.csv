@@ -1,0 +1,6 @@
+method,repository,status,commit,license,accessed_utc,notes
+VQC-DR,https://github.com/AdrianPerezSalinas/universal_qlassifier,official_source_repository,354d70f940ea737192de4063ff72f859c77e5760,license_not_identified_in_search_record,2026-08-12,Original data-reuploading implementation; accessed read-only with git ls-remote
+Yomo-Matched,,no_official_repository_found,N/A,arXiv-paper-license-only,2026-08-12,Implemented from arXiv v1 equations and settings; never call exact reproduction
+PdrQC-Matched,,no_official_repository_found,N/A,arXiv-paper-license-only,2026-08-12,Implemented from arXiv v2 equations and settings; never call exact reproduction
+QK-IQP,,paper_defined_manual_equivalent,N/A,N/A,2026-08-12,Independent analytic checks required
+benchmark-anchor,,no_official_repository_identified,N/A,CC-BY-4.0-paper,2026-08-12,Design reference only

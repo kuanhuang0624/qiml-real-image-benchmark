@@ -1,0 +1,17 @@
+{
+  "bootstrap_replicates": 10000,
+  "distribution_archive": "results/statistics/resampling_distributions.npz",
+  "distribution_archive_sha256": "6c56f2826fe9eaaea7bad48db8213740fd3b7060d83f2ee1a958766068faeb77",
+  "exact_secondary_uncertainty_intervals": 168,
+  "hierarchy": [
+    "model_seed",
+    "measurement_seed",
+    "test_image"
+  ],
+  "paired_images": true,
+  "permutations": 10000,
+  "primary_Holm_family": 12,
+  "seed": 8675309,
+  "stratification": "class",
+  "uncertainty_Holm_family": 6
+}

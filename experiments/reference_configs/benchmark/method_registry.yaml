@@ -1,0 +1,27 @@
+protocol_version: 1
+qubits: 8
+methods:
+  QK-IQP: {family: fixed_quantum_fidelity_kernel, repetitions: 2, topology: circular, trainable_quantum_parameters: 0}
+  QF-Product: {family: fixed_quantum_features, repetitions: 2, readout_dimension: 48, entangling_gates: 0}
+  QF-Ring: {family: fixed_quantum_features, repetitions: 2, readout_dimension: 48, entangling_gates: 16}
+  VQC-DR: {family: data_reuploading, blocks: 2, readout_dimension: 8}
+  Yomo-Matched: {family: probability_aggregation, blocks: 2, readout: computational_basis}
+  PdrQC-Matched: {family: task_adaptive_pauli, maximum_depth: 3, maximum_pauli_weight: 2, candidate_observables: 276}
+  C-LR: {family: classical_shared_interface}
+  C-MLP: {family: classical_shared_interface, matched_to: VQC-DR}
+  C-Poly: {family: classical_shared_interface}
+  C-RBF: {family: classical_shared_interface}
+  C-RFF: {family: classical_shared_interface}
+  C-Trig: {family: classical_shared_interface}
+  C-ResNet: {family: frozen_backbone_reference, input_dimension: 512}
+  C-CNN: {family: full_image_reference, external_pretraining: false}
+adaptations:
+  Yomo-Matched:
+    - shared eight-dimensional ResNet18/PCA angle interface
+    - eight qubits and two data-reuploading blocks
+    - consecutive near-equal computational-basis outcome groups
+    - source-defining probability aggregation and sharpness/entropy loss retained
+  PdrQC-Matched:
+    - shared eight-dimensional angle interface and eight qubits
+    - candidate upload blocks restricted to RX, RY, RZ, CZ ring, and CNOT ring
+    - source-defining discrimination score, weight-at-most-two Pauli pool, task-adaptive selection, and QWC grouping retained

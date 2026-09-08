@@ -1,0 +1,1127 @@
+{
+  "datasets": {
+    "breastmnist": {
+      "C-CNN": {
+        "brier_mean": 0.3921584889614125,
+        "checkpoints": [
+          "checkpoints/validation/breastmnist_D_100pct_C-CNN_0.001_42.pt",
+          "checkpoints/validation/breastmnist_D_100pct_C-CNN_0.001_2026.pt",
+          "checkpoints/validation/breastmnist_D_100pct_C-CNN_0.001_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 12,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.543859649122807,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8007260543773693,
+          "3407": 1.2217115156535887,
+          "42": 0.8957916998532875
+        },
+        "validation_selected_thresholds": {
+          "2026": 0.7453894878886301,
+          "3407": 0.7103392980754822,
+          "42": 0.7504507081419403
+        }
+      },
+      "C-LR": {
+        "brier_mean": 0.2688978046178988,
+        "checkpoints": [],
+        "config": {
+          "C": 10
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8237259816207185,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9949095971432934
+        },
+        "validation_selected_thresholds": {
+          "42": 0.5576582405271956
+        }
+      },
+      "C-MLP": {
+        "brier_mean": 0.4132670184513975,
+        "checkpoints": [],
+        "config": {
+          "alpha": 0.0001,
+          "epochs": 300
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.6644388749651908,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7975810179252606,
+          "3407": 0.8877664314414718,
+          "42": 148.4122412220288
+        },
+        "validation_selected_thresholds": {
+          "2026": 0.5125829581388522,
+          "3407": 0.5491636455291582,
+          "42": 0.4962491113494573
+        }
+      },
+      "C-Poly": {
+        "brier_mean": 0.2784569073254669,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "degree": 3
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8504594820384294,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.6890329891147063
+        },
+        "validation_selected_thresholds": {
+          "42": 0.7939781617020034
+        }
+      },
+      "C-RBF": {
+        "brier_mean": 0.2408435582150848,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "gamma": 0.3
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.871345029239766,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.5072212278035423
+        },
+        "validation_selected_thresholds": {
+          "42": 0.659938643771518
+        }
+      },
+      "C-RFF": {
+        "brier_mean": 0.2589760601221977,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "dimension": 256,
+          "gamma": 0.1
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.8281815650236704,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8464736098041773,
+          "3407": 0.8311037381390185,
+          "42": 0.8358995099382328
+        },
+        "validation_selected_thresholds": {
+          "2026": 0.7101703826690895,
+          "3407": 0.7340328847817237,
+          "42": 0.700893146834211
+        }
+      },
+      "C-ResNet": {
+        "brier_mean": 0.1928626053362205,
+        "checkpoints": [],
+        "config": {
+          "C": 1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.9005847953216375,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.4691112583326704
+        },
+        "validation_selected_thresholds": {
+          "42": 0.5366110380224639
+        }
+      },
+      "C-Trig": {
+        "brier_mean": 0.2585554361698429,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "dimension": 129,
+          "level": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.808688387635756,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9811706885321204
+        },
+        "validation_selected_thresholds": {
+          "42": 0.4840823898913724
+        }
+      },
+      "PdrQC-Matched": {
+        "brier_mean": 0.2461172386051791,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "depth": 3,
+          "groups": 7,
+          "observables": 28,
+          "selection_file": "breastmnist_D_100pct.json"
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8304093567251463,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.8008760212750637
+        },
+        "validation_selected_thresholds": {
+          "42": 0.5460602370206193
+        }
+      },
+      "QF-Product": {
+        "brier_mean": 0.3740943024261809,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.6516290726817042,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0405822602391048
+        },
+        "validation_selected_thresholds": {
+          "42": 0.6812170018705451
+        }
+      },
+      "QF-Ring": {
+        "brier_mean": 0.3378962167990899,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7376775271512114,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.2412426889138892
+        },
+        "validation_selected_thresholds": {
+          "42": 0.693789347602375
+        }
+      },
+      "QK-IQP": {
+        "brier_mean": 0.4062063495482307,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "repetitions": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.515455304928989,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.5205918546126177
+        },
+        "validation_selected_thresholds": {
+          "42": 0.7099663445403737
+        }
+      },
+      "VQC-DR": {
+        "brier_mean": 0.30761167621622487,
+        "checkpoints": [
+          "checkpoints/validation/breastmnist_D_100pct_VQC-DR_0.03_42.pt",
+          "checkpoints/validation/breastmnist_D_100pct_VQC-DR_0.03_2026.pt",
+          "checkpoints/validation/breastmnist_D_100pct_VQC-DR_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7986633249791145,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.6743735690928447,
+          "3407": 0.8827377437548207,
+          "42": 0.9764107226974208
+        },
+        "validation_selected_thresholds": {
+          "2026": 0.7333943847580549,
+          "3407": 0.7308629318025773,
+          "42": 0.5485872204995541
+        }
+      },
+      "Yomo-Matched": {
+        "brier_mean": 0.4999423424465304,
+        "checkpoints": [
+          "checkpoints/validation/breastmnist_D_100pct_Yomo-Matched_0.03_42.pt",
+          "checkpoints/validation/breastmnist_D_100pct_Yomo-Matched_0.03_2026.pt",
+          "checkpoints/validation/breastmnist_D_100pct_Yomo-Matched_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.6159844054580897,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 148.41251176393678,
+          "3407": 4.187996593095508,
+          "42": 148.4121730663084
+        },
+        "validation_selected_thresholds": {
+          "2026": 0.499980565162377,
+          "3407": 0.4981284989373572,
+          "42": 0.4999563545245681
+        }
+      }
+    },
+    "cifar10": {
+      "C-CNN": {
+        "brier_mean": 0.7649066008319038,
+        "checkpoints": [
+          "checkpoints/validation/cifar10_D_5k_C-CNN_0.001_42.pt",
+          "checkpoints/validation/cifar10_D_5k_C-CNN_0.001_2026.pt",
+          "checkpoints/validation/cifar10_D_5k_C-CNN_0.001_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 12,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.35473333333333334,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.9446396753344316,
+          "3407": 0.9743728546467394,
+          "42": 1.0279381750309016
+        }
+      },
+      "C-LR": {
+        "brier_mean": 0.3932871662935449,
+        "checkpoints": [],
+        "config": {
+          "C": 1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7094,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0362720164072243
+        }
+      },
+      "C-MLP": {
+        "brier_mean": 0.4397192777263322,
+        "checkpoints": [],
+        "config": {
+          "alpha": 0.01,
+          "epochs": 300
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.6732666666666667,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.991692525811014,
+          "3407": 0.9060559175949128,
+          "42": 0.8063699598995767
+        }
+      },
+      "C-Poly": {
+        "brier_mean": 0.4669730694502775,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "degree": 3
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7102,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9804636480307164
+        }
+      },
+      "C-RBF": {
+        "brier_mean": 0.4540368255233065,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "gamma": 0.03
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7182,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9342927473288172
+        }
+      },
+      "C-RFF": {
+        "brier_mean": 0.3967596957679822,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "dimension": 256,
+          "gamma": 0.1
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7098666666666666,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8409474649231047,
+          "3407": 0.8437692214911252,
+          "42": 0.8341185252061016
+        }
+      },
+      "C-ResNet": {
+        "brier_mean": 0.1983186520907095,
+        "checkpoints": [],
+        "config": {
+          "C": 0.01
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.863,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.7495776008444962
+        }
+      },
+      "C-Trig": {
+        "brier_mean": 0.4147957404726574,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "dimension": 129,
+          "level": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.6994,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0034599628561296
+        }
+      },
+      "PdrQC-Matched": {
+        "brier_mean": 0.4354478877425354,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "depth": 1,
+          "groups": 7,
+          "observables": 60,
+          "selection_file": "cifar10_D_5k.json"
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.6752,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9613531101960456
+        }
+      },
+      "QF-Product": {
+        "brier_mean": 0.7173699658696799,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.4176,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0677432207637825
+        }
+      },
+      "QF-Ring": {
+        "brier_mean": 0.7774508980807721,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.3466,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.1155420779727034
+        }
+      },
+      "QK-IQP": {
+        "brier_mean": 0.8997695722284202,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "repetitions": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.1106,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 58.89734235660843
+        }
+      },
+      "VQC-DR": {
+        "brier_mean": 0.696933969810531,
+        "checkpoints": [
+          "checkpoints/validation/cifar10_D_5k_VQC-DR_0.03_42.pt",
+          "checkpoints/validation/cifar10_D_5k_VQC-DR_0.03_2026.pt",
+          "checkpoints/validation/cifar10_D_5k_VQC-DR_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.42573333333333335,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7949124435516096,
+          "3407": 0.7114408236158535,
+          "42": 0.7621325216414232
+        }
+      },
+      "Yomo-Matched": {
+        "brier_mean": 0.8376323698293827,
+        "checkpoints": [
+          "checkpoints/validation/cifar10_D_5k_Yomo-Matched_0.03_42.pt",
+          "checkpoints/validation/cifar10_D_5k_Yomo-Matched_0.03_2026.pt",
+          "checkpoints/validation/cifar10_D_5k_Yomo-Matched_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.2843333333333333,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7274024957151947,
+          "3407": 0.7585408162555808,
+          "42": 0.766024387884744
+        }
+      }
+    },
+    "fashion_mnist": {
+      "C-CNN": {
+        "brier_mean": 0.34994990607464427,
+        "checkpoints": [
+          "checkpoints/validation/fashion_mnist_D_5k_C-CNN_0.001_42.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_C-CNN_0.001_2026.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_C-CNN_0.001_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 12,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7418,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.9076358550997976,
+          "3407": 0.9213472983370132,
+          "42": 0.8545805889343374
+        }
+      },
+      "C-LR": {
+        "brier_mean": 0.309656625307049,
+        "checkpoints": [],
+        "config": {
+          "C": 10
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7728,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0474838669597824
+        }
+      },
+      "C-MLP": {
+        "brier_mean": 0.34196570074605165,
+        "checkpoints": [],
+        "config": {
+          "alpha": 0.001,
+          "epochs": 300
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7454000000000001,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.9058345744973404,
+          "3407": 0.7909136877902364,
+          "42": 0.8545102722784138
+        }
+      },
+      "C-Poly": {
+        "brier_mean": 0.3541983873788484,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "degree": 3
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7884,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.7606969034271484
+        }
+      },
+      "C-RBF": {
+        "brier_mean": 0.3420136643384681,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "gamma": 0.03
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.797,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.7082115780556557
+        }
+      },
+      "C-RFF": {
+        "brier_mean": 0.28865022771241944,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "dimension": 256,
+          "gamma": 0.1
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7938000000000001,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8237222848734316,
+          "3407": 0.8199421522268301,
+          "42": 0.809961010971606
+        }
+      },
+      "C-ResNet": {
+        "brier_mean": 0.1867860062832874,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8706,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.124193020656694
+        }
+      },
+      "C-Trig": {
+        "brier_mean": 0.2906356082763521,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "dimension": 129,
+          "level": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.792,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.9296278935537238
+        }
+      },
+      "PdrQC-Matched": {
+        "brier_mean": 0.3114422403239607,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "depth": 1,
+          "groups": 6,
+          "observables": 60,
+          "selection_file": "fashion_mnist_D_5k.json"
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7736,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0659359285606251
+        }
+      },
+      "QF-Product": {
+        "brier_mean": 0.5424381641282705,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.577,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0192994116655354
+        }
+      },
+      "QF-Ring": {
+        "brier_mean": 0.5427406458374496,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.5846,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0741782310025003
+        }
+      },
+      "QK-IQP": {
+        "brier_mean": 0.8969219557842969,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "repetitions": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.1384,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 17.167563741026182
+        }
+      },
+      "VQC-DR": {
+        "brier_mean": 0.6122595150072161,
+        "checkpoints": [
+          "checkpoints/validation/fashion_mnist_D_5k_VQC-DR_0.03_42.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_VQC-DR_0.03_2026.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_VQC-DR_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.5264000000000001,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7467011220687098,
+          "3407": 0.7030271084977752,
+          "42": 0.792472470328084
+        }
+      },
+      "Yomo-Matched": {
+        "brier_mean": 0.8224999335906102,
+        "checkpoints": [
+          "checkpoints/validation/fashion_mnist_D_5k_Yomo-Matched_0.03_42.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_Yomo-Matched_0.03_2026.pt",
+          "checkpoints/validation/fashion_mnist_D_5k_Yomo-Matched_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.3102,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.670625520108036,
+          "3407": 0.6750897242260556,
+          "42": 0.5585007992101204
+        }
+      }
+    },
+    "mnist": {
+      "C-CNN": {
+        "brier_mean": 0.13859189328472157,
+        "checkpoints": [
+          "checkpoints/validation/mnist_D_5k_C-CNN_0.001_42.pt",
+          "checkpoints/validation/mnist_D_5k_C-CNN_0.001_2026.pt",
+          "checkpoints/validation/mnist_D_5k_C-CNN_0.001_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 12,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.906,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7501157779922865,
+          "3407": 0.8016171473802489,
+          "42": 0.7238123341185806
+        }
+      },
+      "C-LR": {
+        "brier_mean": 0.2778010943613062,
+        "checkpoints": [],
+        "config": {
+          "C": 1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8006,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.940132459076048
+        }
+      },
+      "C-MLP": {
+        "brier_mean": 0.31030128194746287,
+        "checkpoints": [],
+        "config": {
+          "alpha": 0.001,
+          "epochs": 300
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.7688,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8516676149100612,
+          "3407": 0.7836615645951328,
+          "42": 0.7514801623530879
+        }
+      },
+      "C-Poly": {
+        "brier_mean": 0.2985498901999318,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "degree": 3
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8272,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.6990836981560117
+        }
+      },
+      "C-RBF": {
+        "brier_mean": 0.2728664099050069,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "gamma": 0.1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.8472,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.6476924217878993
+        }
+      },
+      "C-RFF": {
+        "brier_mean": 0.23289545462701247,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "dimension": 256,
+          "gamma": 0.1
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.8372,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7122032717745127,
+          "3407": 0.7061833500384651,
+          "42": 0.712339675399054
+        }
+      },
+      "C-ResNet": {
+        "brier_mean": 0.0465726291321858,
+        "checkpoints": [],
+        "config": {
+          "C": 1
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.9696,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.985700806060398
+        }
+      },
+      "C-Trig": {
+        "brier_mean": 0.2456931768090683,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "dimension": 129,
+          "level": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.824,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.8549423995083155
+        }
+      },
+      "PdrQC-Matched": {
+        "brier_mean": 0.2860177728174468,
+        "checkpoints": [],
+        "config": {
+          "C": 0.1,
+          "depth": 1,
+          "groups": 6,
+          "observables": 60,
+          "selection_file": "mnist_D_5k.json"
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.7916,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 0.8295779751281814
+        }
+      },
+      "QF-Product": {
+        "brier_mean": 0.637050158485648,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.497,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.102957972062184
+        }
+      },
+      "QF-Ring": {
+        "brier_mean": 0.7184488114449239,
+        "checkpoints": [],
+        "config": {
+          "C": 10,
+          "readout_dimension": 48
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.4198,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 1.0970728215195982
+        }
+      },
+      "QK-IQP": {
+        "brier_mean": 0.8996828739643897,
+        "checkpoints": [],
+        "config": {
+          "C": 1,
+          "repetitions": 2
+        },
+        "model_seeds": [
+          42
+        ],
+        "primary_metric_mean": 0.1142,
+        "status": "FROZEN",
+        "temperatures": {
+          "42": 54.13978645009972
+        }
+      },
+      "VQC-DR": {
+        "brier_mean": 0.7055628600559242,
+        "checkpoints": [
+          "checkpoints/validation/mnist_D_5k_VQC-DR_0.03_42.pt",
+          "checkpoints/validation/mnist_D_5k_VQC-DR_0.03_2026.pt",
+          "checkpoints/validation/mnist_D_5k_VQC-DR_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.40700000000000003,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.7572861827043352,
+          "3407": 0.8052908520287113,
+          "42": 0.7094249479902702
+        }
+      },
+      "Yomo-Matched": {
+        "brier_mean": 0.863252683968,
+        "checkpoints": [
+          "checkpoints/validation/mnist_D_5k_Yomo-Matched_0.03_42.pt",
+          "checkpoints/validation/mnist_D_5k_Yomo-Matched_0.03_2026.pt",
+          "checkpoints/validation/mnist_D_5k_Yomo-Matched_0.03_3407.pt"
+        ],
+        "config": {
+          "batch_size": 128,
+          "epoch_cap": 20,
+          "learning_rate": 0.03,
+          "weight_decay": 0.0001
+        },
+        "model_seeds": [
+          42,
+          2026,
+          3407
+        ],
+        "primary_metric_mean": 0.23233333333333336,
+        "status": "FROZEN",
+        "temperatures": {
+          "2026": 0.8223518438751443,
+          "3407": 0.836480506955829,
+          "42": 0.7406245351477437
+        }
+      }
+    }
+  },
+  "protocol_version": 1,
+  "selection_rule": "primary within 0.002 then lower Brier then lower measured cost then lexical config ID",
+  "test_accessed": false
+}

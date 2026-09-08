@@ -1,0 +1,25 @@
+# Table 13: Ranking Stability
+
+| dataset | scale_A | scale_B | common_methods | spearman_rho | ci_95_lower | ci_95_upper | methods_included | methods_excluded | reason_for_exclusion |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| mnist | D_1k | D_5k | 14 | 0.868132 | 0.859341 | 0.903297 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| mnist | D_1k | D_10k | 14 | 0.868132 | 0.846154 | 0.903297 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| mnist | D_1k | D_full | 11 | 0.836364 | 0.772727 | 0.863636 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| mnist | D_5k | D_10k | 14 | 1 | 0.982418 | 1 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| mnist | D_5k | D_full | 11 | 0.963636 | 0.945455 | 0.972727 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| mnist | D_10k | D_full | 11 | 0.963636 | 0.945455 | 0.990909 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_1k | D_5k | 14 | 0.920879 | 0.872527 | 0.947253 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_1k | D_10k | 14 | 0.947253 | 0.872527 | 0.951648 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_1k | D_full | 11 | 0.8 | 0.727273 | 0.845455 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_5k | D_10k | 14 | 0.986813 | 0.964835 | 1 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_5k | D_full | 11 | 0.854545 | 0.845455 | 0.9 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| fashion_mnist | D_10k | D_full | 11 | 0.890909 | 0.854545 | 0.945455 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_1k | D_5k | 14 | 0.991209 | 0.938462 | 0.991209 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_1k | D_10k | 14 | 0.956044 | 0.925275 | 0.982418 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_1k | D_full | 11 | 0.918182 | 0.9 | 0.927273 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_5k | D_10k | 14 | 0.978022 | 0.969231 | 0.995604 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_5k | D_full | 11 | 0.918182 | 0.9 | 0.954545 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| cifar10 | D_10k | D_full | 11 | 0.963636 | 0.936364 | 0.972727 | C-CNN;C-LR;C-MLP;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| breastmnist | D_25pct | D_50pct | 14 | 0.882289 | 0.424176 | 0.912198 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| breastmnist | D_25pct | D_100pct | 14 | 0.842685 | 0.393407 | 0.916484 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |
+| breastmnist | D_50pct | D_100pct | 14 | 0.871145 | 0.569231 | 0.942857 | C-CNN;C-LR;C-MLP;C-Poly;C-RBF;C-RFF;C-ResNet;C-Trig;PdrQC-Matched;QF-Product;QF-Ring;QK-IQP;VQC-DR;Yomo-Matched | see scalability boundaries | not completed at both scales |

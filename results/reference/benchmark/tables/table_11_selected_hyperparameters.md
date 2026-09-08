@@ -1,0 +1,60 @@
+# Table 11: Selected Hyperparameters
+
+| dataset | training_scale | method | status | config | model_seeds | temperatures |
+| --- | --- | --- | --- | --- | --- | --- |
+| mnist | D_5k | C-LR | FROZEN | {"C": 1} | [42] | {"42": 0.940132459076048} |
+| mnist | D_5k | C-MLP | FROZEN | {"alpha": 0.001, "epochs": 300} | [42, 2026, 3407] | {"2026": 0.8516676149100612, "3407": 0.7836615645951328, "42": 0.7514801623530879} |
+| mnist | D_5k | C-Poly | FROZEN | {"C": 10, "degree": 3} | [42] | {"42": 0.6990836981560117} |
+| mnist | D_5k | C-RBF | FROZEN | {"C": 1, "gamma": 0.1} | [42] | {"42": 0.6476924217878993} |
+| mnist | D_5k | C-RFF | FROZEN | {"C": 1, "dimension": 256, "gamma": 0.1} | [42, 2026, 3407] | {"2026": 0.7122032717745127, "3407": 0.7061833500384651, "42": 0.712339675399054} |
+| mnist | D_5k | C-Trig | FROZEN | {"C": 0.1, "dimension": 129, "level": 2} | [42] | {"42": 0.8549423995083155} |
+| mnist | D_5k | C-ResNet | FROZEN | {"C": 1} | [42] | {"42": 0.985700806060398} |
+| mnist | D_5k | C-CNN | FROZEN | {"batch_size": 128, "epoch_cap": 12, "learning_rate": 0.001, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.7501157779922865, "3407": 0.8016171473802489, "42": 0.7238123341185806} |
+| mnist | D_5k | QK-IQP | FROZEN | {"C": 1, "repetitions": 2} | [42] | {"42": 54.13978645009972} |
+| mnist | D_5k | QF-Product | FROZEN | {"C": 10, "readout_dimension": 48} | [42] | {"42": 1.102957972062184} |
+| mnist | D_5k | QF-Ring | FROZEN | {"C": 10, "readout_dimension": 48} | [42] | {"42": 1.0970728215195982} |
+| mnist | D_5k | VQC-DR | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.7572861827043352, "3407": 0.8052908520287113, "42": 0.7094249479902702} |
+| mnist | D_5k | Yomo-Matched | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.8223518438751443, "3407": 0.836480506955829, "42": 0.7406245351477437} |
+| mnist | D_5k | PdrQC-Matched | FROZEN | {"C": 0.1, "depth": 1, "groups": 6, "observables": 60, "selection_file": "mnist_D_5k.json"} | [42] | {"42": 0.8295779751281814} |
+| fashion_mnist | D_5k | C-LR | FROZEN | {"C": 10} | [42] | {"42": 1.0474838669597824} |
+| fashion_mnist | D_5k | C-MLP | FROZEN | {"alpha": 0.001, "epochs": 300} | [42, 2026, 3407] | {"2026": 0.9058345744973404, "3407": 0.7909136877902364, "42": 0.8545102722784138} |
+| fashion_mnist | D_5k | C-Poly | FROZEN | {"C": 10, "degree": 3} | [42] | {"42": 0.7606969034271484} |
+| fashion_mnist | D_5k | C-RBF | FROZEN | {"C": 10, "gamma": 0.03} | [42] | {"42": 0.7082115780556557} |
+| fashion_mnist | D_5k | C-RFF | FROZEN | {"C": 1, "dimension": 256, "gamma": 0.1} | [42, 2026, 3407] | {"2026": 0.8237222848734316, "3407": 0.8199421522268301, "42": 0.809961010971606} |
+| fashion_mnist | D_5k | C-Trig | FROZEN | {"C": 0.1, "dimension": 129, "level": 2} | [42] | {"42": 0.9296278935537238} |
+| fashion_mnist | D_5k | C-ResNet | FROZEN | {"C": 0.1} | [42] | {"42": 1.124193020656694} |
+| fashion_mnist | D_5k | C-CNN | FROZEN | {"batch_size": 128, "epoch_cap": 12, "learning_rate": 0.001, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.9076358550997976, "3407": 0.9213472983370132, "42": 0.8545805889343374} |
+| fashion_mnist | D_5k | QK-IQP | FROZEN | {"C": 1, "repetitions": 2} | [42] | {"42": 17.167563741026182} |
+| fashion_mnist | D_5k | QF-Product | FROZEN | {"C": 1, "readout_dimension": 48} | [42] | {"42": 1.0192994116655354} |
+| fashion_mnist | D_5k | QF-Ring | FROZEN | {"C": 10, "readout_dimension": 48} | [42] | {"42": 1.0741782310025003} |
+| fashion_mnist | D_5k | VQC-DR | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.7467011220687098, "3407": 0.7030271084977752, "42": 0.792472470328084} |
+| fashion_mnist | D_5k | Yomo-Matched | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.670625520108036, "3407": 0.6750897242260556, "42": 0.5585007992101204} |
+| fashion_mnist | D_5k | PdrQC-Matched | FROZEN | {"C": 1, "depth": 1, "groups": 6, "observables": 60, "selection_file": "fashion_mnist_D_5k.json"} | [42] | {"42": 1.0659359285606251} |
+| cifar10 | D_5k | C-LR | FROZEN | {"C": 1} | [42] | {"42": 1.0362720164072243} |
+| cifar10 | D_5k | C-MLP | FROZEN | {"alpha": 0.01, "epochs": 300} | [42, 2026, 3407] | {"2026": 0.991692525811014, "3407": 0.9060559175949128, "42": 0.8063699598995767} |
+| cifar10 | D_5k | C-Poly | FROZEN | {"C": 1, "degree": 3} | [42] | {"42": 0.9804636480307164} |
+| cifar10 | D_5k | C-RBF | FROZEN | {"C": 1, "gamma": 0.03} | [42] | {"42": 0.9342927473288172} |
+| cifar10 | D_5k | C-RFF | FROZEN | {"C": 1, "dimension": 256, "gamma": 0.1} | [42, 2026, 3407] | {"2026": 0.8409474649231047, "3407": 0.8437692214911252, "42": 0.8341185252061016} |
+| cifar10 | D_5k | C-Trig | FROZEN | {"C": 0.1, "dimension": 129, "level": 2} | [42] | {"42": 1.0034599628561296} |
+| cifar10 | D_5k | C-ResNet | FROZEN | {"C": 0.01} | [42] | {"42": 0.7495776008444962} |
+| cifar10 | D_5k | C-CNN | FROZEN | {"batch_size": 128, "epoch_cap": 12, "learning_rate": 0.001, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.9446396753344316, "3407": 0.9743728546467394, "42": 1.0279381750309016} |
+| cifar10 | D_5k | QK-IQP | FROZEN | {"C": 0.1, "repetitions": 2} | [42] | {"42": 58.89734235660843} |
+| cifar10 | D_5k | QF-Product | FROZEN | {"C": 1, "readout_dimension": 48} | [42] | {"42": 1.0677432207637825} |
+| cifar10 | D_5k | QF-Ring | FROZEN | {"C": 1, "readout_dimension": 48} | [42] | {"42": 1.1155420779727034} |
+| cifar10 | D_5k | VQC-DR | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.7949124435516096, "3407": 0.7114408236158535, "42": 0.7621325216414232} |
+| cifar10 | D_5k | Yomo-Matched | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.7274024957151947, "3407": 0.7585408162555808, "42": 0.766024387884744} |
+| cifar10 | D_5k | PdrQC-Matched | FROZEN | {"C": 0.1, "depth": 1, "groups": 7, "observables": 60, "selection_file": "cifar10_D_5k.json"} | [42] | {"42": 0.9613531101960456} |
+| breastmnist | D_100pct | C-LR | FROZEN | {"C": 10} | [42] | {"42": 0.9949095971432934} |
+| breastmnist | D_100pct | C-MLP | FROZEN | {"alpha": 0.0001, "epochs": 300} | [42, 2026, 3407] | {"2026": 0.7975810179252606, "3407": 0.8877664314414718, "42": 148.4122412220288} |
+| breastmnist | D_100pct | C-Poly | FROZEN | {"C": 1, "degree": 3} | [42] | {"42": 0.6890329891147063} |
+| breastmnist | D_100pct | C-RBF | FROZEN | {"C": 10, "gamma": 0.3} | [42] | {"42": 0.5072212278035423} |
+| breastmnist | D_100pct | C-RFF | FROZEN | {"C": 1, "dimension": 256, "gamma": 0.1} | [42, 2026, 3407] | {"2026": 0.8464736098041773, "3407": 0.8311037381390185, "42": 0.8358995099382328} |
+| breastmnist | D_100pct | C-Trig | FROZEN | {"C": 0.1, "dimension": 129, "level": 2} | [42] | {"42": 0.9811706885321204} |
+| breastmnist | D_100pct | C-ResNet | FROZEN | {"C": 1} | [42] | {"42": 1.4691112583326704} |
+| breastmnist | D_100pct | C-CNN | FROZEN | {"batch_size": 128, "epoch_cap": 12, "learning_rate": 0.001, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.8007260543773693, "3407": 1.2217115156535887, "42": 0.8957916998532875} |
+| breastmnist | D_100pct | QK-IQP | FROZEN | {"C": 10, "repetitions": 2} | [42] | {"42": 0.5205918546126177} |
+| breastmnist | D_100pct | QF-Product | FROZEN | {"C": 0.1, "readout_dimension": 48} | [42] | {"42": 1.0405822602391048} |
+| breastmnist | D_100pct | QF-Ring | FROZEN | {"C": 10, "readout_dimension": 48} | [42] | {"42": 1.2412426889138892} |
+| breastmnist | D_100pct | VQC-DR | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 0.6743735690928447, "3407": 0.8827377437548207, "42": 0.9764107226974208} |
+| breastmnist | D_100pct | Yomo-Matched | FROZEN | {"batch_size": 128, "epoch_cap": 20, "learning_rate": 0.03, "weight_decay": 0.0001} | [42, 2026, 3407] | {"2026": 148.41251176393678, "3407": 4.187996593095508, "42": 148.4121730663084} |
+| breastmnist | D_100pct | PdrQC-Matched | FROZEN | {"C": 0.1, "depth": 3, "groups": 7, "observables": 28, "selection_file": "breastmnist_D_100pct.json"} | [42] | {"42": 0.8008760212750637} |

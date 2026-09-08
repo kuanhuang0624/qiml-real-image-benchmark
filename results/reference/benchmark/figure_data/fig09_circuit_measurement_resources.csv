@@ -1,0 +1,7 @@
+method,depth,two_qubit_gates,measurement_groups,state_preparations
+PdrQC-Matched,3,0,7,512.0
+QF-Product,4,0,3,512.0
+QF-Ring,8,16,3,512.0
+QK-IQP,8,16,1,2560000.0
+VQC-DR,14,16,1,512.0
+Yomo-Matched,14,16,1,512.0

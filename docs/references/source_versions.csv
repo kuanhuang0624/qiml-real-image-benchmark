@@ -1,0 +1,12 @@
+source_id,title,version,date,status,primary_url
+benchmark_anchor,Towards Fair Benchmarking of Quantum Transfer Learning for Visual Classification,arXiv:2605.19417v1,2026-05-19,preprint,https://arxiv.org/abs/2605.19417
+qk_anchor,Supervised learning with quantum-enhanced feature spaces,version_of_record,2019-03-13,peer_reviewed,https://doi.org/10.1038/s41586-019-0980-2
+dr_anchor,Data re-uploading for a universal quantum classifier,Quantum_4_226,2020-02-06,peer_reviewed,https://doi.org/10.22331/q-2020-02-06-226
+yomo,You Only Measure Once: On Designing Single-Shot Quantum Machine Learning Models,arXiv:2509.20090v1,2025-09-24,preprint,https://arxiv.org/abs/2509.20090
+pdrqc,PdrQC: Pauli-space Discriminative Representations based Quantum Classifier,arXiv:2604.16877v2,2026-08-08,preprint,https://arxiv.org/abs/2604.16877
+concept_1,Artificial intelligence for representing and characterizing quantum systems,DOI_record,2026,peer_reviewed,https://doi.org/10.1038/s42254-026-00962-5
+concept_2,Multimodal Deep Representation Learning for Quantum Cross-Platform Verification,PRL_133_130601,2024,peer_reviewed,https://doi.org/10.1103/PhysRevLett.133.130601
+concept_3,Learning quantum systems,NRP_5_141,2023,peer_reviewed,https://doi.org/10.1038/s42254-022-00552-1
+concept_4,A survey on the complexity of learning quantum states,NRP_6_59,2024,peer_reviewed,https://doi.org/10.1038/s42254-023-00662-4
+concept_5,Learning quantum properties from short-range correlations using multi-task networks,NC_15_8796,2024,peer_reviewed,https://doi.org/10.1038/s41467-024-53101-y
+concept_6,Efficient learning for linear properties of bounded-gate quantum circuits,NC_16_3790,2025,peer_reviewed,https://doi.org/10.1038/s41467-025-59198-z

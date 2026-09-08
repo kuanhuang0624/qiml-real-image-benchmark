@@ -1,0 +1,6 @@
+| dataset | comparison | accuracy difference | 95% CI | raw p | Holm p | exploratory status |
+| --- | --- | --- | --- | --- | --- | --- |
+| mnist | PCA12-Q12 minus PCA8-Q8 | 0.032299999999999995 | [0.0256, 0.0390] | not_required | not_required | EXPLORATORY_POST_HOC_WIDTH_ANALYSIS |
+| mnist | PCA16-Q16 minus PCA8-Q8 | 0.008399999999999963 | [0.0012, 0.0157] | 0.027197280271972803 | 0.054394560543945605 | EXPLORATORY_POST_HOC_WIDTH_ANALYSIS |
+| fashion_mnist | PCA12-Q12 minus PCA8-Q8 | -0.008500000000000063 | [-0.0139, -0.0031] | not_required | not_required | EXPLORATORY_POST_HOC_WIDTH_ANALYSIS |
+| fashion_mnist | PCA16-Q16 minus PCA8-Q8 | -0.006400000000000072 | [-0.0122, -0.0007] | 0.033096690330966905 | 0.054394560543945605 | EXPLORATORY_POST_HOC_WIDTH_ANALYSIS |

@@ -1,0 +1,74 @@
+{
+  "sequence": [
+    "RY"
+  ],
+  "paulis": [
+    "ZXIIIIII",
+    "IXIIIIII",
+    "IXZIIIII",
+    "IXIIIZII",
+    "IXIIIIZI",
+    "IXIIZIII",
+    "IXIIIIIZ",
+    "IXIZIIII",
+    "IZIIIIII",
+    "ZIIIIIZI",
+    "IIZIIIIX",
+    "IXIIIIIX",
+    "XXIIIIII",
+    "ZIIIIIII",
+    "ZIIIIIIX",
+    "IIIIIIIX",
+    "IIIIIZIX",
+    "IZZIIIII",
+    "IZIZIIII",
+    "ZIIIZIII",
+    "IZIIIIIZ",
+    "ZIIIIZII",
+    "IIIIZIIX",
+    "ZZIIIIII",
+    "IIIIIIZX",
+    "IIIIZIZI",
+    "ZIZIIIII",
+    "IIIIXIIX"
+  ],
+  "groups": [
+    [
+      "ZXIIIIII",
+      "IXIIIIII",
+      "IXZIIIII",
+      "IXIIIZII",
+      "IXIIIIZI",
+      "IXIIZIII",
+      "IXIIIIIZ",
+      "IXIZIIII",
+      "ZIIIIIZI",
+      "ZIIIIIII",
+      "ZIIIZIII",
+      "ZIIIIZII",
+      "IIIIZIZI",
+      "ZIZIIIII"
+    ],
+    [
+      "IZIIIIII",
+      "IIZIIIIX",
+      "ZIIIIIIX",
+      "IIIIIIIX",
+      "IIIIIZIX",
+      "IZZIIIII",
+      "IZIZIIII",
+      "IIIIZIIX",
+      "ZZIIIIII",
+      "IIIIIIZX"
+    ],
+    [
+      "IXIIIIIX",
+      "XXIIIIII",
+      "IIIIXIIX"
+    ],
+    [
+      "IZIIIIIZ"
+    ]
+  ],
+  "validation_score": 0.8205128205128205
+}

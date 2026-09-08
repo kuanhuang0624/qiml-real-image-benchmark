@@ -1,0 +1,9 @@
+# Resource plan
+
+No more than eight concurrent jobs, one GPU per job, no multi-GPU quantum execution, and no real QPU. Screening jobs are capped at two hours unless checkpointed; confirmation jobs at six hours unless checkpointed and resumable. Every phase updates `resource_accounting.csv`; unknown counts remain blank, never zero.
+
+## Phase 4 launch gate
+
+The completed 80-sample CPU smoke measured 18.93 seconds for 300 full-batch VQC-DR steps after freezing single-thread execution. Primary fixed-method validation completed locally for all four datasets without failures; its largest objects were 5,000-by-5,000 IQP Gram matrices. The trainable primary array contains four one-GPU tasks, each capped at six hours and checkpointed every epoch with model, optimizer, best validation state, epoch, Python/NumPy/PyTorch RNG states, and explicit null scheduler state. The conservative primary-validation ceiling is therefore 24 GPU-hours. Together with 0.018333 GPU-hours already measured and the remaining 17 GPU-hour scaling/test/statistics allowance, the projected total is 41.02 GPU-hours, below the frozen 48 GPU-hour cap. Only four benchmark jobs may run concurrently in this launch; unrelated jobs are not inspected beyond scheduler metadata and are not modified.
+
+The fixed-method scaling-validation array has eleven CPU tasks with concurrency four, eight CPUs and 96 GiB per task, and a six-hour checkpoint-free ceiling. Based on the observed 5k wall time and quadratic scaling, the conservative array ceiling used for the global gate is 72 CPU-hours (rather than the scheduler maximum of 528 allocated CPU-hours). This keeps the projected total at 147 CPU-hours. Exact 10k IQP is included because the measured 5k pilot projects below the cap; full natural-image IQP is marked `QUADRATIC_SCALING_BOUNDARY`. Full C-Poly and C-RBF are marked `CLASSICAL_KERNEL_SCALING_BOUNDARY`.

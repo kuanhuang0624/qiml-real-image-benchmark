@@ -1,0 +1,16 @@
+dataset,training_scale,completed_runs,statevector_evaluations,kernel_entries,real_qpu_shots
+breastmnist,D_100pct,24,3042.0,383292.0,0
+breastmnist,D_25pct,24,1815.0,40141.0,0
+breastmnist,D_50pct,24,2226.0,117820.0,0
+cifar10,D_10k,24,120000.0,200000000.0,0
+cifar10,D_1k,24,93000.0,11000000.0,0
+cifar10,D_5k,24,105000.0,75000000.0,0
+cifar10,D_full,21,225000.0,0.0,0
+fashion_mnist,D_10k,24,120000.0,200000000.0,0
+fashion_mnist,D_1k,24,93000.0,11000000.0,0
+fashion_mnist,D_5k,24,105000.0,75000000.0,0
+fashion_mnist,D_full,21,255000.0,0.0,0
+mnist,D_10k,24,120000.0,200000000.0,0
+mnist,D_1k,24,93000.0,11000000.0,0
+mnist,D_5k,24,105000.0,75000000.0,0
+mnist,D_full,21,255000.0,0.0,0

@@ -1,0 +1,15 @@
+order,node
+0,Image
+1,"Frozen
+ResNet-18"
+2,"Train-only
+PCA8"
+3,"Shared 8D
+angles"
+4,"Quantum + classical
+methods"
+5,"Exact + finite-shot
+evaluation"
+6,Scaling
+7,Uncertainty
+8,Statistics

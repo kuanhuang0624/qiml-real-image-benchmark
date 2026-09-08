@@ -1,0 +1,17 @@
+{
+  "original_commits": {
+    "real_image_qml_benchmark_2026": "fef76ed1a5db0e9f52c0cd2aa2792a3bdce980ca",
+    "pdrqc_interface_width_sensitivity_2026": "c625abac44166f7fc4ed2ac74020823b9e057fa4",
+    "implementation_audit_2026": "7cc56dca45cb024bf4956afab15aee3387e480bb"
+  },
+  "export_scope": "QIML real-image benchmark and exploratory width extension only",
+  "excluded": [
+    "ISBI mammographic projects",
+    "raw datasets",
+    "feature caches",
+    "checkpoints",
+    "prediction-level files",
+    "credentials",
+    "unfinished IonQ resource audit"
+  ]
+}

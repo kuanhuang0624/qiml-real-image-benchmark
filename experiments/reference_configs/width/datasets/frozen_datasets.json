@@ -1,0 +1,10 @@
+{
+  "datasets": ["mnist", "fashion_mnist"],
+  "training_scale": "D_5k",
+  "training_count": 5000,
+  "validation_count": 5000,
+  "test_count": 10000,
+  "classes": 10,
+  "parent_features": "frozen ResNet-18 512D"
+}
+

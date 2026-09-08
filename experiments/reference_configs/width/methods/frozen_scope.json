@@ -1,0 +1,13 @@
+{
+  "widths": [8, 12, 16],
+  "methods": ["PdrQC-Matched", "C-RBF", "C-RFF", "C-Trig"],
+  "reference": "C-ResNet",
+  "pdrqc": {"depth": 1, "upload_sequence": ["RY"], "maximum_pauli_weight": 2, "selected_observables": 60},
+  "classifier_C_grid": [0.1, 1.0, 10.0],
+  "rbf_gamma_grid": [0.03, 0.1, 0.3],
+  "rff": {"dimension": 256, "gamma_grid": [0.1], "seeds": [42, 2026, 3407]},
+  "trig_level": 2,
+  "bootstrap_replicates": 10000,
+  "permutation_replicates": 10000
+}
+

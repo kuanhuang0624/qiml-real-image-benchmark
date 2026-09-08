@@ -1,0 +1,7 @@
+contrast,dataset,metric,method_A,method_B,effect_A_minus_B,ci_95_lower,ci_95_upper,raw_p,permutations,status,holm_p,interpretation
+U_brier_fashion_mnist,fashion_mnist,brier,PdrQC-Matched,C-RBF,-0.0360352159220144,-0.0423116435002713,-0.0298172787553721,9.999000099990002e-05,10000,ESTIMATED,0.0005999400059994,Statistically detectable paired difference.
+U_aurc_fashion_mnist,fashion_mnist,aurc,PdrQC-Matched,C-RBF,-0.0459229123806813,-0.0525327747080069,-0.0392052546101718,9.999000099990002e-05,10000,ESTIMATED,0.0005999400059994,Statistically detectable paired difference.
+U_brier_cifar10,cifar10,brier,PdrQC-Matched,C-RBF,-0.0213457471837069,-0.0272533300509117,-0.0154242990837029,9.999000099990002e-05,10000,ESTIMATED,0.0005999400059994,Statistically detectable paired difference.
+U_aurc_cifar10,cifar10,aurc,PdrQC-Matched,C-RBF,-0.0579698801430443,-0.0678494935299218,-0.0482380397703603,9.999000099990002e-05,10000,ESTIMATED,0.0005999400059994,Statistically detectable paired difference.
+U_brier_breastmnist,breastmnist,brier,PdrQC-Matched,C-RBF,0.0106638751510685,-0.056420811817313,0.0785330246831378,0.776022397760224,10000,ESTIMATED,1.0,No statistically detectable difference was observed.
+U_aurc_breastmnist,breastmnist,aurc,PdrQC-Matched,C-RBF,-0.0269985586985399,-0.1069285979466588,0.0515374504122872,0.5192480751924807,10000,ESTIMATED,1.0,No statistically detectable difference was observed.

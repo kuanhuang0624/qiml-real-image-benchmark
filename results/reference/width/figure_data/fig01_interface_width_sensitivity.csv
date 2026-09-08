@@ -1,0 +1,27 @@
+dataset,width,method,test_accuracy,ci_95_lower,ci_95_upper,reference_status
+mnist,8,PdrQC-Matched,0.7934,0.7859,0.8008025,matched interface
+mnist,8,C-RBF,0.8443,0.8376975,0.8511,matched interface
+mnist,8,C-RFF,0.8369,0.8301,0.8437666666666667,matched interface
+mnist,8,C-Trig,0.8297,0.8228,0.8368,matched interface
+mnist,12,PdrQC-Matched,0.8257,0.8185,0.8329,matched interface
+mnist,12,C-RBF,0.9026,0.8968,0.9083,matched interface
+mnist,12,C-RFF,0.8779666666666667,0.8717,0.8842675,matched interface
+mnist,12,C-Trig,0.8881,0.882,0.8941,matched interface
+mnist,16,PdrQC-Matched,0.8018,0.7942,0.8094,matched interface
+mnist,16,C-RBF,0.9173,0.9119,0.9226,matched interface
+mnist,16,C-RFF,0.8379333333333333,0.8254324999999999,0.8504008333333334,matched interface
+mnist,16,C-Trig,0.9003,0.8944,0.9060025,matched interface
+mnist,512,C-ResNet,0.9637,0.96,0.9672,unmatched 512D reference
+fashion_mnist,8,PdrQC-Matched,0.7718,0.7644,0.7795,matched interface
+fashion_mnist,8,C-RBF,0.7937,0.7864,0.801,matched interface
+fashion_mnist,8,C-RFF,0.7902333333333335,0.7828333333333334,0.7977333333333334,matched interface
+fashion_mnist,8,C-Trig,0.787,0.7796,0.7946,matched interface
+fashion_mnist,12,PdrQC-Matched,0.7633,0.7558,0.7709,matched interface
+fashion_mnist,12,C-RBF,0.8154,0.8082,0.8224,matched interface
+fashion_mnist,12,C-RFF,0.7991,0.7919666666666666,0.8062,matched interface
+fashion_mnist,12,C-Trig,0.8028,0.7955,0.8101,matched interface
+fashion_mnist,16,PdrQC-Matched,0.7654,0.758,0.773,matched interface
+fashion_mnist,16,C-RBF,0.8278,0.8208,0.8349,matched interface
+fashion_mnist,16,C-RFF,0.7702,0.7606658333333334,0.7791,matched interface
+fashion_mnist,16,C-Trig,0.812,0.8049,0.8191,matched interface
+fashion_mnist,512,C-ResNet,0.8647,0.8583,0.871,unmatched 512D reference

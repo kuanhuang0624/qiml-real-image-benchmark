@@ -1,0 +1,300 @@
+{
+  "datasets": {
+    "fashion_mnist": {
+      "PCA12-Q12": {
+        "C-RBF": {
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1
+          },
+          "seed": 42,
+          "validation_accuracy": 0.8216
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.8041999999999999
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 289,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.8152
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 1.0
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_fashion_mnist_PCA12.json",
+          "selection_file_hash": "0ea06b416f4c3b8855c4fd1a899341a58f9e9818e1dffcd07685075c5ab98ab0",
+          "validation_accuracy": 0.7616
+        },
+        "interface": {
+          "explained_variance_ratio": 0.46108052134513855,
+          "preprocessing_hash": "badef70b366acd110701bd7997615b5c113edf824cd7ddf4aac371e30ff21df9"
+        }
+      },
+      "PCA16-Q16": {
+        "C-RBF": {
+          "config": {
+            "C": 10.0,
+            "gamma": 0.03
+          },
+          "seed": 42,
+          "validation_accuracy": 0.8396
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.778
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 513,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.8262
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 1.0
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_fashion_mnist_PCA16.json",
+          "selection_file_hash": "089f385bff53cd98f7f29b9930fe6d52d3d76fe36575e403a123a3b1c2639944",
+          "validation_accuracy": 0.7642
+        },
+        "interface": {
+          "explained_variance_ratio": 0.512531042098999,
+          "preprocessing_hash": "a26ea31c0d4e752cfe81a3f45dd58eaef2738e99f95169dc567b0fd52b7c7e1e"
+        }
+      },
+      "PCA8-Q8": {
+        "C-RBF": {
+          "config": {
+            "C": 10.0,
+            "gamma": 0.03
+          },
+          "seed": 42,
+          "validation_accuracy": 0.7972
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.7936000000000001
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 129,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.792
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 1.0
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_fashion_mnist_PCA8.json",
+          "selection_file_hash": "e3a218e4db382de92d0d26c6de24a6e01abf6f4f5bfdb698e00b235cb29d2af3",
+          "validation_accuracy": 0.7736
+        },
+        "interface": {
+          "explained_variance_ratio": 0.38782835006713867,
+          "preprocessing_hash": "f2bd42feea8a3d248599423eba50e2c61d3ccd6be28c3a9b73489b9e7f098709"
+        }
+      }
+    },
+    "mnist": {
+      "PCA12-Q12": {
+        "C-RBF": {
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1
+          },
+          "seed": 42,
+          "validation_accuracy": 0.9074
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.8765999999999999
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 289,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.891
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 0.1
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_mnist_PCA12.json",
+          "selection_file_hash": "a46e7a9135edd81931cd1ee676663bb48851dd9f0e3e6f1943b86d8256abbd6b",
+          "validation_accuracy": 0.8336
+        },
+        "interface": {
+          "explained_variance_ratio": 0.4959619343280792,
+          "preprocessing_hash": "16b904ad7f3ade76410c2893414352c871291b666c5e4027069b3b42c5060660"
+        }
+      },
+      "PCA16-Q16": {
+        "C-RBF": {
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1
+          },
+          "seed": 42,
+          "validation_accuracy": 0.9232
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.8345333333333333
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 513,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.909
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 0.1
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_mnist_PCA16.json",
+          "selection_file_hash": "9aad112144481063d71582f4680675162d24cc890cb2881a74bb92b1f93017c9",
+          "validation_accuracy": 0.8122
+        },
+        "interface": {
+          "explained_variance_ratio": 0.5466791391372681,
+          "preprocessing_hash": "d46608ea351926fb74af6b5126d33c29c009f6d6d3342ef220607e264137431b"
+        }
+      },
+      "PCA8-Q8": {
+        "C-RBF": {
+          "config": {
+            "C": 1.0,
+            "gamma": 0.1
+          },
+          "seed": 42,
+          "validation_accuracy": 0.8468
+        },
+        "C-RFF": {
+          "config": {
+            "C": 1.0,
+            "dimension": 256,
+            "gamma": 0.1
+          },
+          "seeds": [
+            42,
+            2026,
+            3407
+          ],
+          "validation_accuracy": 0.8372
+        },
+        "C-Trig": {
+          "config": {
+            "C": 0.1,
+            "dimension": 129,
+            "level": 2
+          },
+          "seed": 42,
+          "validation_accuracy": 0.824
+        },
+        "PdrQC-Matched": {
+          "config": {
+            "C": 0.1
+          },
+          "seed": 42,
+          "selection_file": "results/raw/pdr_selection_mnist_PCA8.json",
+          "selection_file_hash": "caf98c5cfdb0d34f455529f94943163dbd0d49ebfd1cd962167cbc4c4c0ba99d",
+          "validation_accuracy": 0.7916
+        },
+        "interface": {
+          "explained_variance_ratio": 0.4183736741542816,
+          "preprocessing_hash": "7c96f668afe2023ba68aa2169da7be2b5a33475b5923a6474c07f74acdeead64"
+        }
+      }
+    }
+  },
+  "exploratory_status": "EXPLORATORY_POST_HOC_WIDTH_ANALYSIS",
+  "figure": {
+    "metric": "test_accuracy_percent",
+    "panels": [
+      "mnist",
+      "fashion_mnist"
+    ],
+    "reference": "C-ResNet unmatched 512D",
+    "x": [
+      "8 / 8",
+      "12 / 12",
+      "16 / 16"
+    ]
+  },
+  "statistics": {
+    "holm_family": [
+      "mnist",
+      "fashion_mnist"
+    ],
+    "paired_permutation_replicates": 10000,
+    "stratified_paired_bootstrap_replicates": 10000
+  }
+}
