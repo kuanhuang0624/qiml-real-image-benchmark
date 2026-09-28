@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this code."
+title: "Quantum Machine Learning for Image Classification: A Controlled Benchmark"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Kuan
+  - family-names: Xu
+    given-names: Meng
+  - family-names: Wang
+    given-names: Yingfeng
+repository-code: "https://github.com/kuanhuang0624/qiml-real-image-benchmark"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Quantum Machine Learning for Image Classification: A Controlled Benchmark"
+  authors:
+    - family-names: Huang
+      given-names: Kuan
+    - family-names: Xu
+      given-names: Meng
+    - family-names: Wang
+      given-names: Yingfeng
+  collection-title: "Second AAAI Symposium on Quantum Information & Machine Learning (QIML): Bridging Quantum Computing and Artificial Intelligence"
+  year: 2026
+  notes: "Accepted at the 2026 AAAI Fall Symposium Series; publication forthcoming."

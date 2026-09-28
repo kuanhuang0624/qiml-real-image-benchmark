@@ -105,3 +105,30 @@ and no 10,000-draw statistical recomputation was performed during packaging.
 The full expensive reproduction entry points remain documented, not certified
 as a newly completed scientific rerun. GitHub CI is a separate run of the
 core-only checks and does not perform dataset downloads or training.
+
+## Accepted-paper release review: 2026-09-27
+
+Manuscript: *Quantum Machine Learning for Image Classification: A Controlled
+Benchmark*, Kuan Huang, Meng Xu, and Yingfeng Wang.
+
+- Table 1: all 56 estimates and 112 confidence-interval endpoints match the
+  reference CSVs at the paper's displayed precision.
+- Table 2: all 12 primary and six uncertainty effects, intervals, and
+  Holm-adjusted p-values match.
+- Width results: all 12 quoted PdrQC/C-RBF accuracies match. The four reported
+  ranking-correlation ranges and nine full-data kernel boundaries also match.
+- Reference integrity: all 111 reference-file checksums pass; all 187 original
+  source-file hashes pass.
+- Core environment: 28 tests passed; the optional PyTorch resume test was skipped.
+- PyTorch environment: all 29 tests passed, including the five regression tests
+  for saved PCA transforms and the fixed C-RBF comparator.
+- Editable installation and wheel build passed. The wheel contains the complete
+  MIT license and the SPDX expression `MIT`.
+- Demo, custom-feature workflow, workspace initialization, and Figure 2 rendering
+  completed. Documentation links and citation YAML passed their checks.
+- The current release scan and a scan of all 213 historical Git blobs found no
+  matching credential patterns, personal server paths, or excluded data formats.
+  The credential scan is heuristic.
+
+The two changes to new-run behavior are recorded in `docs/PORTING_NOTES.md`.
+Full dataset training and 10,000-draw resampling were not repeated in this review.

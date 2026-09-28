@@ -20,6 +20,19 @@ PyTorch quantum model/loss, CNN architecture, classical estimators, original
 validation grids, sampling conventions and statistical formulas were retained.
 Reference result CSVs and selected figure files are copied byte-for-byte.
 
+## Corrections for new runs
+
+- PCA cache files now save the fitted PCA mean, and test extraction subtracts
+  it before projection. Older cache files without that field retain their
+  original zero-center transform.
+- H1 uses the paper's fixed C-RBF comparator. The original builder selected
+  the highest-scoring classical method on validation data; the archived runs
+  selected C-RBF on all three inferential datasets. New runs keep C-RBF even
+  when another classical control has a higher validation score.
+
+These changes affect newly generated experiments. Archived configurations,
+predictions, result tables, figures, and reference checksums are unchanged.
+
 ## New release-only utilities
 
 `cli.py`, `examples.py`, `features/interface.py`, `paths.py` and `protocol.py`

@@ -12,15 +12,11 @@ import torch
 
 from qiml_benchmark.data.test_loaders import load_official_test, verify_lock
 from qiml_benchmark.features.extract_resnet import build_model, extract
+from qiml_benchmark.features.interface import transform_saved as transform
 
 from qiml_benchmark.paths import workspace_root
 ROOT = workspace_root()
 SCALES = {"mnist": ("D_1k", "D_5k", "D_10k", "D_full"), "fashion_mnist": ("D_1k", "D_5k", "D_10k", "D_full"), "cifar10": ("D_1k", "D_5k", "D_10k", "D_full"), "breastmnist": ("D_25pct", "D_50pct", "D_100pct")}
-
-
-def transform(features: np.ndarray, preprocessor: Path) -> np.ndarray:
-    p = np.load(preprocessor, allow_pickle=False); standard = (features - p["mean"]) / p["std"]; z = standard @ p["components"].T
-    return (np.pi * np.clip(z / np.maximum(p["quantiles"], 1e-8), -1, 1)).astype(np.float32)
 
 
 def main() -> None:

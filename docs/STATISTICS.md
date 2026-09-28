@@ -3,7 +3,7 @@
 The primary benchmark used 10,000 class-stratified image bootstrap replicates
 and 10,000 paired randomization permutations. Model and measurement seeds are
 retained in the resampling hierarchy. These are **image-level benchmark** tests,
-not the patient-clustered EMBED/CSAW analyses from the unrelated ISBI project.
+with test images as the sampling units.
 
 The twelve primary contrasts share one Holm family. The six uncertainty
 contrasts use a separate Holm family. Two post-hoc width comparisons form a
@@ -21,8 +21,8 @@ p-values. It does **not** regenerate p-values or intervals from aggregate tables
 
 ## Recompute the original analyses
 
-The private archive contains the prediction-level arrays omitted from this
-code repository. If you have authorized access to that artifact directory:
+Point the reanalysis script to a benchmark artifact directory containing the
+saved prediction arrays and run indexes:
 
 ```bash
 python scripts/reanalyze_published.py --artifacts /path/to/real_image_qml_benchmark_2026 --check-only

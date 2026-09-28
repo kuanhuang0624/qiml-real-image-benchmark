@@ -19,4 +19,5 @@ jobs:
       - run: python -m pip install -c environment/core-constraints.txt -e '.[test]'
       - run: python -m pytest -q
       - run: python scripts/check_reference_results.py
+      - run: python scripts/release_audit.py
       - run: qiml demo --output runs/ci_demo

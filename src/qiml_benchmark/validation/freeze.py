@@ -76,10 +76,11 @@ def build_contrasts(selection: dict[str, dict[str, dict[str, object]]]) -> list[
     rows = []
     for dataset in ("fashion_mnist", "cifar10", "breastmnist"):
         selected = selection[dataset]; quantum = [m for m in ("QK-IQP", "QF-Product", "QF-Ring", "VQC-DR", "Yomo-Matched", "PdrQC-Matched") if selected[m]["status"] == "FROZEN"]
-        classical = [m for m in ("C-LR", "C-MLP", "C-Poly", "C-RBF", "C-RFF", "C-Trig") if selected[m]["status"] == "FROZEN"]
-        best_q = max(quantum, key=lambda m: selected[m]["primary_metric_mean"]); best_c = max(classical, key=lambda m: selected[m]["primary_metric_mean"])
+        if selected.get("C-RBF", {}).get("status") != "FROZEN":
+            raise RuntimeError(f"The paper's C-RBF comparator is not frozen for {dataset}")
+        best_q = max(quantum, key=lambda m: selected[m]["primary_metric_mean"])
         rows.extend([
-            {"id": f"H1_{dataset}", "dataset": dataset, "method_A": best_q, "method_B": best_c, "setting": "exact", "metric": "AUROC" if dataset == "breastmnist" else "accuracy"},
+            {"id": f"H1_{dataset}", "dataset": dataset, "method_A": best_q, "method_B": "C-RBF", "setting": "exact", "metric": "AUROC" if dataset == "breastmnist" else "accuracy"},
             {"id": f"H2_{dataset}", "dataset": dataset, "method_A": "QF-Ring", "method_B": "QF-Product", "setting": "finite_shot_total_128", "metric": "AUROC" if dataset == "breastmnist" else "accuracy"},
             {"id": f"H3_{dataset}", "dataset": dataset, "method_A": "Yomo-Matched", "method_B": "VQC-DR", "setting": "finite_shot_total_8", "metric": "AUROC" if dataset == "breastmnist" else "accuracy"},
             {"id": f"H4_{dataset}", "dataset": dataset, "method_A": "PdrQC-Matched", "method_B": "QF-Ring", "setting": "finite_shot_total_128", "metric": "AUROC" if dataset == "breastmnist" else "accuracy"},

@@ -63,7 +63,7 @@ an exact reproduction.
 
 The primary training subset is `D_5k` for natural images and `D_100pct` for
 BreastMNIST. The model seeds are `42,2026,3407` for stochastic methods;
-deterministic fixed methods use seed `42`. These are QIML seeds, not EMBED/ISBI seeds.
+deterministic fixed methods use seed `42`.
 
 ```bash
 for dataset in mnist fashion_mnist cifar10 breastmnist; do
@@ -72,19 +72,26 @@ for dataset in mnist fashion_mnist cifar10 breastmnist; do
 done
 ```
 
-For each natural dataset, run the additional scaling subsets `D_1k`, `D_10k`,
-and `D_full` with both drivers. For BreastMNIST use `D_25pct` and `D_50pct`.
-For example:
+Run validation for the additional training scales:
 
 ```bash
-python -m qiml_benchmark.validation.run_primary_fixed fashion_mnist --scale D_1k --mode scaling
-python -m qiml_benchmark.validation.run_primary_trainable fashion_mnist --scale D_1k --mode scaling --device cpu
+for dataset in mnist fashion_mnist cifar10; do
+  for scale in D_1k D_10k D_full; do
+    python -m qiml_benchmark.validation.run_primary_fixed "$dataset" --scale "$scale" --mode scaling
+    python -m qiml_benchmark.validation.run_primary_trainable "$dataset" --scale "$scale" --mode scaling --device cpu
+  done
+done
+for scale in D_25pct D_50pct; do
+  python -m qiml_benchmark.validation.run_primary_fixed breastmnist --scale "$scale" --mode scaling
+  python -m qiml_benchmark.validation.run_primary_trainable breastmnist --scale "$scale" --mode scaling --device cpu
+done
 ```
 
 Keep the declared full-natural-data kernel boundaries. The original driver
 contains dataset-specific scaling-grid constants selected during the historical
 primary stage; these are retained, not a new automatically adapting search.
-Run the remaining dataset/scale pairs in the same way before freezing.
+Freeze after all validation stages complete. H1 compares the strongest
+validation-selected quantum method with the fixed C-RBF control.
 
 ```bash
 python -m qiml_benchmark.validation.freeze
@@ -123,10 +130,17 @@ measurement budgets. Finite-shot routines preserve the original algorithm,
 including noisy training-feature readout refits and validation-only calibration.
 They are not hardware execution or fixed-checkpoint inference-only noise tests.
 
-Run `evaluation.run_scaling DATASET SCALE` for every declared dataset/scale,
-then aggregate and analyze:
+Evaluate all declared training scales, then aggregate and analyze:
 
 ```bash
+for dataset in mnist fashion_mnist cifar10; do
+  for scale in D_1k D_5k D_10k D_full; do
+    python -m qiml_benchmark.evaluation.run_scaling "$dataset" "$scale"
+  done
+done
+for scale in D_25pct D_50pct D_100pct; do
+  python -m qiml_benchmark.evaluation.run_scaling breastmnist "$scale"
+done
 python -m qiml_benchmark.evaluation.analyze_scaling
 python -m qiml_benchmark.uncertainty.run_all
 python -m qiml_benchmark.statistics.run_all
@@ -143,7 +157,7 @@ expectation and selection implementation for PCA8/12/16. The saved extension
 configurations, selected observables, source-data tables and exploratory tests
 are included. PCA8 originally reused parent caches to avoid randomized-SVD
 drift. The complete parent-cache-dependent width orchestration is not packaged
-as an automatic fresh run; use the private archive for exact historical replay.
+as an automatic fresh run. Historical replay requires the original parent caches.
 Changing the width or rerunning selection is a new exploratory experiment.
 
 ## Provenance and expectations

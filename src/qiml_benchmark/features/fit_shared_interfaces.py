@@ -50,7 +50,7 @@ def fit_one(dataset: str, scale_id: str, all_features: np.ndarray, labels: np.nd
     interface = OUT / f"{dataset}_{scale_id}.npz"
     np.savez_compressed(interface, train_angles=a_train, train_labels=labels[train_ids], train_ids=train_ids, val_angles=a_val, val_labels=val_labels)
     preprocessor = OUT / f"{dataset}_{scale_id}_preprocessor.npz"
-    np.savez_compressed(preprocessor, mean=scaler.mean_, std=scaler.scale_, components=pca.components_, explained_variance=pca.explained_variance_, explained_variance_ratio=pca.explained_variance_ratio_, quantiles=quantiles)
+    np.savez_compressed(preprocessor, mean=scaler.mean_, std=scaler.scale_, pca_mean=pca.mean_, components=pca.components_, explained_variance=pca.explained_variance_, explained_variance_ratio=pca.explained_variance_ratio_, quantiles=quantiles)
     clipping = np.mean(np.abs(z_train / np.maximum(quantiles, 1e-8)) > 1, axis=0)
     return {
         "dataset": dataset, "training_scale": scale_id, "backbone": "ResNet18_Weights.IMAGENET1K_V1",

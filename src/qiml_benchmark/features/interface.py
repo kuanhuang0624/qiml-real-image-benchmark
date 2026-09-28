@@ -1,13 +1,21 @@
 """Portable train-only PCA angle interface for examples and new experiments.
 
-The original experiment's cache builder is fit_shared_interfaces.py. This
-adapter retains PCA centering explicitly for new runs; it does not replace
-any historical cache or claim bitwise reproduction of randomized PCA.
+The full cache builder and the example adapter save training PCA centering.
+Saved transforms without a PCA mean retain the historical zero-center behavior.
 """
 from dataclasses import dataclass
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+
+
+def transform_saved(features: np.ndarray, preprocessor) -> np.ndarray:
+    """Apply a saved training transform; retain the legacy format's zero center."""
+    with np.load(preprocessor, allow_pickle=False) as p:
+        standard = (features - p['mean']) / p['std']
+        center = p['pca_mean'] if 'pca_mean' in p.files else 0.0
+        z = (standard - center) @ p['components'].T
+        return (np.pi * np.clip(z / np.maximum(p['quantiles'], 1e-8), -1, 1)).astype(np.float32)
 
 
 @dataclass

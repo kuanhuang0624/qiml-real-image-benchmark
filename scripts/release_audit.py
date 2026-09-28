@@ -8,7 +8,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FOLDERS = ('src', 'scripts', 'tests', 'docs', 'experiments', 'results/reference', 'provenance', 'environment', '.github')
-TOP = ('README.md', 'CONTRIBUTING.md', 'pyproject.toml', '.gitignore', '.gitattributes')
+TOP = ('README.md', 'LICENSE', 'CITATION.cff', 'CONTRIBUTING.md', 'pyproject.toml', '.gitignore', '.gitattributes')
 
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()

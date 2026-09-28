@@ -13,9 +13,9 @@
 
 Raw public datasets, official ImageNet weights, extracted features, trained
 checkpoints and prediction arrays are intentionally not distributed here.
-Obtain datasets under their own terms or use the author's separately held
-private archive. Training and resampling can be expensive. No full benchmark
-training or full 10,000-draw statistical reanalysis was rerun during packaging.
+Obtain datasets under their own terms. Saved prediction records are required
+for statistical reanalysis without retraining. Full benchmark training and
+10,000-draw resampling were not rerun for this release.
 
 The width extension's parent-cache-dependent orchestration is not an automatic
 fresh workflow in this release. Its analytic core, frozen choices, results and
@@ -30,6 +30,10 @@ skipped because PyTorch was unavailable in that particular environment.
 Finite-shot calibrators were materialized after exact test access, although
 they were fitted only from validation predictions. This release does not
 convert those facts into stronger prospective provenance claims.
+
+New PCA caches preserve the fitted PCA mean at test time, and new H1 contrasts
+use the paper's fixed C-RBF comparator. See [porting notes](PORTING_NOTES.md)
+for these corrections and compatibility with historical artifacts.
 
 Randomized PCA can drift between numerical-library versions; the width study
 explicitly reused the frozen PCA8 parent arrays. Fresh runs should record

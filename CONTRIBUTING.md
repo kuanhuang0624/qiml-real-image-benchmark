@@ -13,5 +13,4 @@ Code and documentation should be in English. Explain numerical conventions,
 measurement-budget accounting and statistical families in changes that affect
 them. Do not make quantum-advantage or clinical-performance claims from a demo.
 
-The repository is private during release preparation; licensing and public
-visibility require the author's approval.
+Contributions are distributed under the [MIT License](LICENSE).

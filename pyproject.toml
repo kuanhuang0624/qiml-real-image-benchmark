@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,12 +7,18 @@ name = "qiml-real-image-benchmark"
 version = "0.1.0"
 description = "Controlled real-image quantum/classical representation benchmarks for AAAI Fall QIML 2026"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11"
 dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "scikit-learn>=1.6,<2", "pandas>=2.2,<4", "matplotlib>=3.9,<4", "tabulate>=0.9,<1"]
 
 [project.optional-dependencies]
 images = ["torch>=2.6,<3", "torchvision>=0.21,<1"]
 test = ["pytest>=8,<10"]
+
+[project.urls]
+Repository = "https://github.com/kuanhuang0624/qiml-real-image-benchmark"
+Issues = "https://github.com/kuanhuang0624/qiml-real-image-benchmark/issues"
 
 [project.scripts]
 qiml = "qiml_benchmark.cli:main"
